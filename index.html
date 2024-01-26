@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Javier Arteaga Gonzales</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#hobbies">Hobbies y Soft Skills</a></li>
+                <li><a href="#formacion">Formación y Cursos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Banner -->
+        <header id="inicio">
+            <img src="banner.jpg" alt="Banner">
+        </header>
+    
+        <!-- Sección sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <img src="foto-perfil.jpg" alt="Foto de Perfil">
+            <p>
+                <strong>Nombre:</strong> Javier Arteaga Gonzales<br>
+                <strong>Nacionalidad:</strong> Peruano<br>
+                <strong>Biografía:</strong> Tu Biografía...
+            </p>
+        </section>
+    
+        <!-- Hobbies y Soft Skills -->
+        <section id="hobbies">
+            <h2>Hobbies y Soft Skills</h2>
+            <p>
+                <strong>Pasatiempos:</strong> Actividades que disfruto hacer.<br>
+                <strong>Habilidades blandas:</strong> Comunicación, liderazgo, empatía, etc.
+            </p>
+        </section>
+    
+        <!-- Formación y Cursos -->
+        <section id="formacion">
+            <h2>Formación y Cursos</h2>
+            <!-- Aquí puedes agregar tus formaciones y cursos -->
+        </section>
+    
+        <!-- Experiencia en programación -->
+        <section id="experiencia">
+            <h2>Experiencia en Programación</h2>
+            <!-- Aquí puedes listar los proyectos de programación realizados -->
+        </section>
+    
+        <!-- Formulario de contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="procesar_formulario.php" method="post">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    
+        <!-- Pie de página -->
+        <footer>
+            <p>Desarrollado por: <a href="https://github.com/javierarteagagonzales">Javier Arteaga Gonzales</a></p>
+        </footer>
     
 </body>
 </html>
