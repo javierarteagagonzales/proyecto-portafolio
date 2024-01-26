@@ -224,3 +224,67 @@ nav a.active {
     display: block;
     font-size: 1.2em;
 }
+
+/* Experiencia en programación  */
+#experiencia {
+    background-color: #f2f2f2; /* Fondo gris muy claro */
+    color: #333333; /* Texto gris oscuro para mayor contraste */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#experiencia h2 {
+    color: #3498db; /* Texto azul tecnológico para el encabezado */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyecto {
+    display: flex;
+    justify-content: center; /* Centramos los proyectos horizontalmente */
+    align-items: center;
+    margin-bottom: 40px; /* Espacio entre proyectos */
+}
+
+.proyecto-imagen img {
+    max-width: 300px; /* Tamaño máximo para la imagen del proyecto */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-right: 20px; /* Espacio entre la imagen y la información del proyecto */
+}
+
+.proyecto-info {
+    text-align: left; /* Alineamos el texto a la izquierda */
+}
+
+.proyecto-info h3 {
+    color: #3498db; /* Texto azul tecnológico para el título del proyecto */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.proyecto-info p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.botones-proyecto button {
+    background-color: #3498db; /* Fondo azul tecnológico para los botones */
+    color: #ffffff; /* Texto blanco para mayor contraste */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    margin-right: 10px; /* Espacio entre los botones */
+    cursor: pointer;
+}
+
+.botones-proyecto button:hover {
+    background-color: #2c3e50; /* Cambio de color al pasar el ratón */
+}
