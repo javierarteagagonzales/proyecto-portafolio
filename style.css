@@ -149,4 +149,39 @@ nav a.active {
 
 
 /* seccion SOBRE MI */
+#sobre-mi {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto gris oscuro para mayor contraste */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#sobre-mi h2 {
+    color: #3498db; /* Texto azul tecnológico para el encabezado */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#sobre-mi img {
+    max-width: 200px; /* Tamaño máximo para la imagen de perfil */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+#sobre-mi p {
+    font-size: 1.2em;
+    text-align: left; /* Alineación del texto a la izquierda */
+    max-width: 600px; /* Ancho máximo para el contenido del párrafo */
+    margin: 0 auto; /* Centramos el párrafo horizontalmente */
+}
+
+#sobre-mi strong {
+    color: #3498db; /* Texto azul tecnológico para las etiquetas fuertes */
+    font-weight: bold;
+}
+
+
+/* Hobbies y Soft Skills */
 
