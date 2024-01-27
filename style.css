@@ -140,11 +140,18 @@ nav a.active {
     font-size: 1.2em; /* Tamaño grande para los enlaces */
 }
 
+.imagen-presenta {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea la imagen desde la parte superior */
+}
+
 .imagen-presenta img {
-    max-width: 50%; /* Asegura que la imagen no se desborde */
+    max-width: 200px; /* Ancho máximo para la imagen */
     height: auto;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border-radius: 50%; /* Forma de círculo */
+    object-fit: cover; /* Para asegurar que la imagen se ajuste al círculo sin deformaciones */
+    margin-top: -10px; /* Desplazamiento hacia arriba para mostrar la parte superior de la imagen */
 }
 
 
