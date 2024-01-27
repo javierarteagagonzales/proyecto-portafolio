@@ -1,35 +1,16 @@
-// Script para el desplazamiento suave al hacer clic en los enlaces de navegación
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+$(document).ready(function() {
+    // Agrega un evento de clic a todos los enlaces del menú
+    $('nav a').on('click', function(event) {
+      // Evita la acción predeterminada del enlace
+      event.preventDefault();
+  
+      // Obtiene el ID de la sección a la que se va a desplazar
+      var targetId = $(this).attr('href');
+  
+      // Realiza un desplazamiento suave hacia la sección de destino
+      $('html, body').animate({
+        scrollTop: $(targetId).offset().top
+      }, 800); // Ajusta la velocidad según tus preferencias
     });
-});
-
-// Script para mostrar/ocultar el botón de desplazamiento hacia arriba
-window.onscroll = function () {
-    scrollFunction();
-};
-
-function scrollFunction() {
-    const scrollToTopButton = document.getElementById("scroll-to-top");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopButton.style.display = "block";
-    } else {
-        scrollToTopButton.style.display = "none";
-    }
-}
-
-// Script para desplazarse hacia arriba al hacer clic en el botón
-document.getElementById("scroll-to-top").addEventListener("click", function () {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-});
-
-
-
-
-
+  });
+  
