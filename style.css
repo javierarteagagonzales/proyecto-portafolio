@@ -141,7 +141,7 @@ nav a.active {
 }
 
 .imagen-presenta img {
-    max-width: 100%; /* Asegura que la imagen no se desborde */
+    max-width: 50%; /* Asegura que la imagen no se desborde */
     height: auto;
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
@@ -247,21 +247,27 @@ nav a.active {
 
 .proyecto {
     display: flex;
-    justify-content: center; /* Centramos los proyectos horizontalmente */
-    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para evitar que los proyectos sean demasiado anchos */
     margin-bottom: 40px; /* Espacio entre proyectos */
 }
 
-.proyecto-imagen img {
-    max-width: 300px; /* Tamaño máximo para la imagen del proyecto */
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin-right: 20px; /* Espacio entre la imagen y la información del proyecto */
+
+.proyecto-imagen {
+    flex: 1; /* Ocupa el 50% del ancho disponible */
 }
 
 .proyecto-info {
-    text-align: left; /* Alineamos el texto a la izquierda */
+    flex: 1; /* Ocupa el 50% del ancho disponible */
+    padding: 0 20px; /* Espaciado alrededor del contenido de información */
+}
+
+.proyecto-imagen img {
+    max-width: 100%; /* La imagen ocupa el ancho completo de su contenedor */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 10px; /* Espacio entre la imagen y la información del proyecto */
 }
 
 .proyecto-info h3 {
@@ -292,7 +298,6 @@ nav a.active {
 .botones-proyecto button:hover {
     background-color: #2c3e50; /* Cambio de color al pasar el ratón */
 }
-
 
 
 /* contacto */
