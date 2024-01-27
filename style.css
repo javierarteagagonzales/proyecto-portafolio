@@ -55,6 +55,10 @@ header img {
 section {
     padding: 80px 20px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #333333; /* Texto gris oscuro */
 }
 
@@ -141,17 +145,22 @@ nav a.active {
 }
 
 .imagen-presenta {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Alinea la imagen desde la parte superior */
+    width: 250px; /* ajusta el tamaño del círculo según sea necesario */
+    height: 250px; /* ajusta el tamaño del círculo según sea necesario */
+    border-radius: 50%; /* convierte el contenedor en un círculo */
+    overflow: hidden; /* asegura que la imagen no sobresalga del círculo */
+    position: relative; 
 }
 
 .imagen-presenta img {
-    max-width: 200px; /* Ancho máximo para la imagen */
-    height: auto;
-    border-radius: 50%; /* Forma de círculo */
-    object-fit: cover; /* Para asegurar que la imagen se ajuste al círculo sin deformaciones */
-    margin-top: -10px; /* Desplazamiento hacia arriba para mostrar la parte superior de la imagen */
+    width: 100%; /* ocupa el 100% del contenedor circular */
+    height: auto; /* mantiene la proporción original de la imagen */
+    position: absolute; /* permite posicionar la imagen dentro del contenedor */
+    top: 70%; /* coloca la parte superior de la imagen en el centro vertical del contenedor */
+    left: 50%; /* coloca la parte izquierda de la imagen en el centro horizontal del contenedor */
+    transform: translate(-50%, -50%); /* ajusta el centro de la imagen correctamente */
+    border: 2px solid #fff;
+
 }
 
 
