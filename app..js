@@ -33,39 +33,3 @@ document.getElementById("scroll-to-top").addEventListener("click", function () {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Agrega proyectos de ejemplo al cargar la página
-    agregarProyecto('proyecto1.jpg', 'Proyecto 1', 'Descripción del Proyecto 1.', 'https://demo1.com', 'https://repo1.com');
-    agregarProyecto('proyecto2.jpg', 'Proyecto 2', 'Descripción del Proyecto 2.', 'https://demo2.com', 'https://repo2.com');
-    // Agrega más proyectos según sea necesario
-});
-
-// Función para agregar proyectos dinámicamente
-function agregarProyecto(imagenSrc, titulo, descripcion, demoLink, repoLink) {
-    var proyectosContainer = document.querySelector('.proyectos-container');
-
-    // Crea un nuevo proyecto div
-    var proyectoDiv = document.createElement('div');
-    proyectoDiv.classList.add('proyecto');
-
-    // Crea el contenido del proyecto
-    var contenidoProyecto = `
-        <div class="proyecto-imagen">
-            <img src="${imagenSrc}" alt="${titulo}">
-        </div>
-        <div class="proyecto-info">
-            <h3>${titulo}</h3>
-            <p>${descripcion}</p>
-            <div class="botones-proyecto">
-                <a href="${demoLink}" target="_blank"><button>Ver Demo</button></a>
-                <a href="${repoLink}" target="_blank"><button>Repositorio</button></a>
-            </div>
-        </div>
-    `;
-
-    // Agrega el contenido al proyecto div
-    proyectoDiv.innerHTML = contenidoProyecto;
-
-    // Agrega el proyecto al contenedor
-    proyectosContainer.appendChild(proyectoDiv);
-}
